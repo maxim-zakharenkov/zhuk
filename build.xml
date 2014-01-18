@@ -1,0 +1,11 @@
+<project name="game1" default="pack">
+	<target name="pack">
+		<jar destfile="game1.jar">
+				<fileset dir="bin"/>
+			<manifest>
+			      <attribute name="Main-Class"
+			            value="engine.GameFrame"/>
+			 </manifest>
+		</jar>
+	</target>
+</project>
