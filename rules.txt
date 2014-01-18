@@ -1,0 +1,24 @@
+
+0. Board size is N*N
+
+1. The game is performed in cycles. In each cycle each unit can make a valid 
+move.
+
+2. In case a unit makes an invalid move it immediately looses the game.
+
+3. In case both units make invalid move the both receive 0 points and game
+is over.
+
+4. In case both units select same cell for the move they are both automatically
+returned to their initial positions. If this cell contained cherry the cherry
+remains on the place.
+
+5. Maximal move count is N*N. In case not all cherries are collected after
+N*N moves the game is stopped and  the winner is determined using collected
+scores. 
+
+6. In case both units collect same score at the end of the game the game 
+result is considered as draw and both units receive 1 point.
+
+7. Cherries are always generated symmetrically for both units. Total number 
+of cherries is odd.
